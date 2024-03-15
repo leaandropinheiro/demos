@@ -1,0 +1,1 @@
+// npm install sequelize pg-hstore pg
