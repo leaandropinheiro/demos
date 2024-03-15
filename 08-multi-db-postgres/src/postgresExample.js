@@ -32,6 +32,9 @@ async function main() {
     freezeTableName: false,
     timestamps: false
   })
+  await heroes.sync()
+  const result = await heroes.findAll({ raw: true })
+  console.log('result', result)
 }
 
 main()
